@@ -8,7 +8,7 @@ namespace Sprint3
 {
     internal class Department
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }
