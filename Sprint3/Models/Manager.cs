@@ -8,11 +8,10 @@ namespace Sprint3
 {
     internal class Manager:Employee
     {
-        public Manager(int Id, string name,  int departmentId, decimal salary,DateTime HireDate)
-    : base( Id ,name , departmentId,salary, HireDate)
+    public List<Employee> TeamMembers = new List<Employee>();
+    public Manager(int id, string name, int departmentId, decimal salary)
+            : base(id, name, departmentId, salary)
         {
-          
         }
-      public List<Employee>TeamMembers=new List<Employee>();
     }
 }
