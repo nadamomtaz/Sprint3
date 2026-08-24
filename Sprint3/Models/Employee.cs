@@ -13,6 +13,7 @@ namespace Sprint3
         public int DepartmentId { get; set; }
         public DateTime HireDate{ get; set; }
         public decimal Salary { get; set; }
+        public List<string> skills { get; set; }
         
         //Id, Name, HireDate, DepartmentId, Salary
         public Employee(int id , string name , int DepartmentId,decimal salary) {
