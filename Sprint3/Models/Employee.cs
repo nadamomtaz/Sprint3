@@ -8,7 +8,7 @@ namespace Sprint3
 {
     internal class Employee
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string? Name { get; set; }
         public int DepartmentId { get; set; }
         public DateTime HireDate{ get; set; }
