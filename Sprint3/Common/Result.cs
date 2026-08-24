@@ -8,9 +8,9 @@ namespace Sprint3
 {
     internal class Result <T>
     {
-        public <T> Success { get; set; }
-        public <T> Message { get; set; }
-        public <T> Data { get; set; }
+        public bool Success { get; set; }
+        public string Message { get; set; }
+        public DataTime Data { get; set; }
        
         
         
