@@ -15,5 +15,12 @@ namespace Sprint3
         public decimal Salary { get; set; }
         
         //Id, Name, HireDate, DepartmentId, Salary
+        public Employee(int id , string name , int DepartmentId,decimal salary) {
+            this.Id = id;
+            this.Name = name;
+            this.DepartmentId = DepartmentId;
+            this.Salary = salary;
+            HireDate=DateTime.Now;
+        }
     }
 }
