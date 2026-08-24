@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace Sprint3
 {
-  public void AddtoActiveEmployee()
-{
-    if (Onboarding.Count == 0)
+    internal class EmployeeEventArgs : EventArgs
     {
-        Console.WriteLine("No employee onboarding");
-        return;
+        public Employee Employee { get; }
+
+        public EmployeeEventArgs(Employee employee)
+        {
+            Employee = employee;
+        }
     }
-
-    Employee e1 = Onboarding.Dequeue();
-    ActiveEmployee.Add(e1);
-    ActionHistory.Push($"{e1.Name} removed from Onboarding && added to Active Employee");
-
-    EmployeeOnboarded?.Invoke(this, new EmployeeEventArgs(e1));   ا
-}
 }
